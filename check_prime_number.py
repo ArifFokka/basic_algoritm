@@ -1,13 +1,11 @@
-#check_prime_number.py
+##check_prime_number.py
 
-n=int(input('Type here: '))
-i,flag =1,1
-for x in range(i, i<(n/2)):
-       if (n % x) == 0:
-           flag=0
-           print(n,"is not a prime number")
-           break
-if flag == 0:
-    print(n, "is not a prime number")
+num=int(input('Type here: '))
+i=2
+for i in range(i,num):
+    if (num%i==0):
+        print(num,'not prime')
+        break
 else:
-    print(n, "is  a prime number")
+    print(num,"prime")
+#stop
